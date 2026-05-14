@@ -36,12 +36,45 @@ The repository includes:
 
 # Installation
 
+## Git LFS Requirement
+
+This repository uses Git Large File Storage (Git LFS) for large datasets.
+
+Before cloning, install Git LFS:
+
+### Ubuntu/Debian
+
+```bash
+sudo apt install git-lfs
+git lfs install
+```
+
+### macOS (Homebrew)
+
+```bash
+brew install git-lfs
+git lfs install
+```
+
+### Windows
+
+Install from:
+
+https://git-lfs.github.com/
+
+Then initialize:
+
+```bash
+git lfs install
+```
+
 Clone the repository:
 
 ```bash
 git clone git@github.com:samyajoypal/dmm_inference.git
 cd dmm_inference
 ```
+The large TCGA datasets will be downloaded automatically via Git LFS.
 
 Install all required Python packages:
 
